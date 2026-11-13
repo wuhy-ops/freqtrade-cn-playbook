@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# 运行时数据与密钥
+user_data/
+config.json
+config_*.json
+!deploy/config.example.json
+*.key
+*.pem
+*.sqlite
+*.sqlite3
+*.zip
+*.tar.gz
+logs/
+.env
+.venv/
+venv/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store

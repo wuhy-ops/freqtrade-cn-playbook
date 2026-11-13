@@ -1,0 +1,8 @@
+[Unit]
+Description=Shadow tracker for B1 and RSI2
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/freqtrade/shadow_tracker.py

@@ -1,0 +1,9 @@
+[Unit]
+Description=Run shadow tracker daily at 08:12
+
+[Timer]
+OnCalendar=*-*-* 08:12:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

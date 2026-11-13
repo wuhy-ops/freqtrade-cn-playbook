@@ -1,0 +1,8 @@
+[Unit]
+Description=Freqtrade service watchdog
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/freqtrade/watchdog.py
